@@ -29,7 +29,7 @@ Carpetas
 
 Códigos
 
-- `Main.java`: Programa principal para probar los métodos.
+- [Main.java](MetodosNumericos/Main.java): Programa principal para probar los métodos.
 - `Menu_Error_Absoluto.java`: Código para el cálculo del error absoluto y el metodo menu correspondiente.
 - `Bisección.java`: Código para el metodo de bisección.
 - `Evaluar.java`: Código que resuelve ecuaciones escritas como cadenas de textos.
