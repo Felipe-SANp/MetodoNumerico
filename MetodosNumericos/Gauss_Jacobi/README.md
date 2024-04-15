@@ -29,9 +29,9 @@ en la iteración `( k )`.
 
 ## Código Gauss-Jacobi
 
-  El código java Gauss-Jacobi se encuentra en la carpeta `Gauss_Jacobi_Seidel` y se divide en:
-- [metodo.java](): Clase que contiene el método de Jacobi y el método main.
-- [metodo.java](): Clase que presenta un menú para que el usuario ingrese los valores
+  El código java Gauss-Jacobi se encuentra en la carpeta `Gauss_Jacobi` y se divide en:
+- [metodo.java](menuGJS.java): Clase que contiene el método de Jacobi.
+- [menuGJS.java](menuGJS.java): Clase que presenta un menú para que el usuario ingrese los valores
 
 ### Condiciones de inicio
 Para que el método de Jacobi funcione correctamente, se deben cumplir las siguientes condiciones para las matrices:
