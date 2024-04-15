@@ -20,7 +20,7 @@ public class Main {
 
                     - 1. Ir a Código de Error Absoluto
                     - 2. Ir a Código de Metodo de Bisección
-                    - 3. Ir a Código de Método de Gauss-Jacobi/Seidel
+                    - 3. Ir a Código de Método de Gauss-Jacobi
                     - 4. Terminar Código
 
                      Ingrese una Opcion: \
@@ -38,7 +38,7 @@ public class Main {
                     break;
 
                     case 3:
-                        menuGJS.menu(scn);
+                        menuGJS.gauss_Jacobi(scn);
                         break;
                 
                     case 4:
