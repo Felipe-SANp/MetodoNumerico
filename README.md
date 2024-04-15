@@ -25,7 +25,7 @@ Carpetas
 - [MetodosNumericos](MetodosNumericos): Carpeta que junta todos los archivos.
 - [ErrorAbsoluto](MetodosNumericos/ErrorAbsoluto): Carpeta con los códigos relacionados con el error absoluto.
 - [MetodoBiseccion](MetodosNumericos/MetodoBiseccion): Carpeta con los códigos relacionados con el metodo de bisección.
-- [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
+- [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Jacobi.
 
 Códigos
 
