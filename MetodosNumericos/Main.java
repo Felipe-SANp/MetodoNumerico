@@ -1,5 +1,5 @@
 import ErrorAbsoluto.Menu_Error_Absoluto;
-import Gauss_Jacobi_Seidel.menuGJS;
+import Gauss_Jacobi.menuGJS;
 import MetodoBiseccion.MenuBiseccion;
 import java.util.Scanner;
 import java.util.InputMismatchException;

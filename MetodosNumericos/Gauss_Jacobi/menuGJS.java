@@ -1,4 +1,4 @@
-package Gauss_Jacobi_Seidel;
+package Gauss_Jacobi;
 import java.util.Scanner;
 
 public class menuGJS {
