@@ -22,10 +22,11 @@ El repositorio se organiza en las siguientes carpetas y ficheros:
 
 Carpetas
 
-- [MetodosNumericos](MetodosNumericos): Carpeta que junta todos los archivos.
-- [ErrorAbsoluto](MetodosNumericos/ErrorAbsoluto): Carpeta con los códigos relacionados con el error absoluto.
-- [MetodoBiseccion](MetodosNumericos/MetodoBiseccion): Carpeta con los códigos relacionados con el metodo de bisección.
-- [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
+- `MetodosNumericos`: Carpeta que junta todos los archivos.
+- `ErrorAbsoluto`: Carpeta con los códigos relacionados con el error absoluto.
+- `MetodoBiseccion`: Carpeta con los códigos relacionados con el metodo de bisección.
+- `Gauss_Jacobi_Seidel`: Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
+- `README.md`: Archivo con la información del proyecto.
 
 Códigos
 
@@ -36,7 +37,6 @@ Códigos
 - `MenuBiseccion`: Código que permite probar el metodo de bisección.
 - `metodo.java`: Código que contiene el método de Jacobi.
 - `menuGJS.java`: Código para el menú del método de Jacobi.
-- `README.md`: Archivo con la información del proyecto.
 
 ## RECOMENDACIONES PARA SU USO
 
