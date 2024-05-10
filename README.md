@@ -1,6 +1,6 @@
 ## REPOSITORIO MATERIA: MÉTODOS NUMÉRICOS
 
-Información: 
+Información:
 
 - Autores: .....
 - Fecha creación: 15/02/24
@@ -8,25 +8,24 @@ Información:
 
 ## DESCRIPCIÓN DEL PROYECTO
 
-Repositorio que contiene códigos para resolver principalmente ejercicios de métodos numéricos. 
-Se organiza en carpetas según el tipo de metodo o concepto que se aborda, y dentro de cada una hay un archivo .java con la solución correspondiente 
-Los archivos principales son sobre: 
+Repositorio que contiene códigos para resolver principalmente ejercicios de métodos numéricos.
+Se organiza en carpetas según el tipo de metodo o concepto que se aborda, y dentro de cada una hay un archivo .java con la solución correspondiente
+Los archivos principales son sobre:
 
 - Error Absoluto
-- Metodo de Bisección 
+- Metodo de Bisección
 - Método de Gauss-Seidel
-    
-## ORGANIZACIÓN DE LOS CÓDIGOS 
+
+## ORGANIZACIÓN DE LOS CÓDIGOS
 
 El repositorio se organiza en las siguientes carpetas y ficheros:
 
 Carpetas
 
-- `MetodosNumericos`: Carpeta que junta todos los archivos.
-- `ErrorAbsoluto`: Carpeta con los códigos relacionados con el error absoluto.
-- `MetodoBiseccion`: Carpeta con los códigos relacionados con el metodo de bisección.
-- `Gauss_Jacobi_Seidel`: Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
-- `README.md`: Archivo con la información del proyecto.
+- [MetodosNumericos](MetodosNumericos): Carpeta que junta todos los archivos.
+- [ErrorAbsoluto](MetodosNumericos/ErrorAbsoluto): Carpeta con los códigos relacionados con el error absoluto.
+- [MetodoBiseccion](MetodosNumericos/MetodoBiseccion): Carpeta con los códigos relacionados con el metodo de bisección.
+- [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
 
 Códigos
 
@@ -37,6 +36,7 @@ Códigos
 - `MenuBiseccion`: Código que permite probar el metodo de bisección.
 - `metodo.java`: Código que contiene el método de Jacobi.
 - `menuGJS.java`: Código para el menú del método de Jacobi.
+- `README.md`: Archivo con la información del proyecto.
 
 ## RECOMENDACIONES PARA SU USO
 

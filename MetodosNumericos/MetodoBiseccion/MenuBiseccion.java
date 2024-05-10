@@ -10,7 +10,6 @@ public class MenuBiseccion {
         
         int op; String ecuacion, rango; double err;
 
-        
         imprimir("""
            
            Antes de empezar unos puntos:
@@ -48,11 +47,7 @@ public class MenuBiseccion {
                             Double.parseDouble(rangos[1]), 
                             scn1
                         );
-
-
-                        imprimir(" Ingrese porcentaje de error: ");err = scn1.nextDouble(); 
-
-
+                        imprimir(" Ingrese porcentaje de error: ");err = scn1.nextDouble();
                         imprimir("\n DATOS OBTENIDOS: \n");
 
 
