@@ -1,113 +1,53 @@
-## METODO GAUSS JACOBI
+## METODO DE INTEGRACION NUMÉRICA DE LA REGLA DEL TRAPECIO
+El método de Trapecio es un método numérico para la aproximación de una integral definida.
+La idea es aproximar el área bajo la curva de una función f(x) dividiendo el intervalo de integración
+en segmentos más pequeños, y aproximando el área de cada segmento con el área de un trapecio.
 
-Este proyecto implementa el método iterativo de Gauss-Jacobi para resolver sistemas de
-ecuaciones lineales. El método se aplica dentro de una clase método y se ejecuta desde un
-método main que presenta un menú para que el usuario ingrese los valores necesarios.
+En la clase `metodoTrapecio.java`, el método `trapecio()` implementa este algoritmo.
 
-### Fórmula y explicación 
-Antes de empezar a explicar el código debemos aclarar que el desarrollo del método de
-Jacobi en lenguaje java fue basada bajo la siguiente fórmula Jacobiana:
+## Fórmula
+La fórmula para el método del trapecio es:
+Para un número de intervalos `n` > 0, la fórmula es:
 
-     - x^k+1 = (D^-1 * b ) - { [ D^-1 * (L+U) ] * x^k
+    - Aproximación de la integral = h/2 * (f(a) + 2 * f(x_1) + 2 * f(x_2) + ... + 2 * f(x_n) + f(b))
+Para `n` = 0, la fórmula es:
 
-Donde:
+    - Aproximación de la integral = h * (f(a) + f(b))/2
 
--  `( x^k+1 )`: Esta es la aproximación de la solución del sistema de ecuaciones en la
-iteración `( k+1 )`.
-- `( D^-1)`: Es la inversa de la matriz diagonal `( D )` de la matriz de coeficientes `( A )`. En
-el método de Jacobi, `( A )` se divide en tres matrices: la diagonal `( D )`, la triangular
-inferior `( L )` y el triangular superior `( U )`. La matriz `( D )` contiene solo los elementos
-de la diagonal principal de `( A )`, y su inversa `( D^-1 )` es fácil de calcular, ya que
-solo implica tomar el recíproco de los elementos de la diagonal.
-- `( b )`: Es el vector de términos independientes del sistema de ecuaciones lineales.
-- `( L+U )`: Es la suma de las matrices triangular inferior `( L )` y triangular superior `( U
-)` de la matriz de coeficientes `( A )`. Estas matrices contienen los elementos fuera de la
-diagonal principal de `( A )`.
-- `( x^k )`: Es la aproximación actual o previa de la solución del sistema de ecuaciones
-en la iteración `( k )`.
+## Funcionamiento del método:
+
+Recibe cuatro parámetros:
+- Dos cadenas `A` y `B` que representan los límites de integración
+- Un entero `n` que representa el número de segmentos en los que se dividirá el intervalo de integración
+- Una cadena `fx` que representa la función a integrar.
+
+Convierte las cadenas `A` y `B` a números decimales utilizando el método `evaluar()` de la clase `Evaluar.java`
+- Este método evalúa una expresión matemática representada como una cadena.
+
+Si `n` es mayor que cero, divide el intervalo de integración en `n` segmentos.
+- Calcula el valor de la función en cada punto del segmento y almacena estos valores en el array `x_i`
+- Luego, calcula la suma de estos valores, multiplica por `h/2` (donde `h` es el ancho de cada segmento)
+- Suma los valores de la función en los puntos inicial y final. Este es el valor aproximado de la integral.
 
 
-## Código Gauss-Jacobi
+Si `n` es cero, simplemente
+- Calcula el valor de la función en los puntos inicial y final
+- Toma el promedio de estos dos valores
+- Multiplica por `h` (que en este caso es simplemente `b - a`). Este es el valor aproximado de la integral.
 
-  El código java Gauss-Jacobi se encuentra en la carpeta `Gauss_Jacobi` y se divide en:
-- [metodo.java](menuGJS.java): Clase que contiene el método de Jacobi.
-- [menuGJS.java](menuGJS.java): Clase que presenta un menú para que el usuario ingrese los valores
+Finalmente, el método
+- Devuelve el valor aproximado de la integral
+- Redondeado a cuatro decimales.
 
-### Condiciones de inicio
-Para que el método de Jacobi funcione correctamente, se deben cumplir las siguientes condiciones para las matrices:
-- Ser diagonalmente dominante.
-- Ser simétrica.
+## OTROS PUNTOS ADICIONALES DEL CÓDIGO
+La clase `metodoTrapecio.java` contiene los métodos `trapecio()`, `f()`, `round()` y `main()`.
 
-### Detalles del procedimiento
-Se pide al usuario que ingrese:
-- El número de ecuaciones del sistema de ecuaciones
-- Los valores de la matriz de coeficientes `( A )` y el vector de términos independientes `( b )`
-- El número máximo de iteraciones
-- El margen de error 
+- El método `f()` simplemente evalúa la función en un punto dado, utilizando el método `evaluar()` de la clase `Evaluar.java`.
+- El método `round()` se utiliza para redondear un número decimal a un número específico de decimales.
+- El método `main()` proporciona una interfaz de línea de comandos para el método `trapecio()`:
+-
+  * Imprime una descripción del método del trapecio
+  * Solicita al usuario que ingrese los límites de integración
+  * El número de segmentos y la función a integrar
+  * Termina imprimiendo el valor aproximado de la integral.
 
-Se ejecuta el método de Jacobi y se muestra la solución del sistema de ecuaciones
-
-### Condiciones para cada iteración en el método:
-- Si el error es menor que el margen de error, se termina el ciclo.
-- Si el número de iteraciones es igual al número máximo de iteraciones, se termina el ciclo.
-- En cualquier otro caso, se continúa con la siguiente iteración.
-
-### Ejemplo de uso
-Se tiene el siguiente sistema de ecuaciones lineales:
-```     
-       2x - 6y - z = - 38
-     - 3x - 1y + 7z = - 34
-     - 8x + 1y - 2z = - 20
-```
-Primero se organiza la matriz de coeficientes `( A )` y el vector de términos independientes `( b )`
-  de modo que se tenga en la matriz la diagonal dominante:
-```     
-     - 8x + 1y - 2z = - 20
-       2x - 6y - z = - 38
-     - 3x - 1y + 7z = - 34
-```
-Para este sistema de ecuaciones, la matriz de coeficientes `( A )` es:
-```     
-     -8 1 -2
-     2 -6 -1
-     -3 -1 7
-```
-El vector de términos independientes `( b )` es:
-```     
-     -20
-     -38
-     -34
-```
-
-### Durante la ejecución del programa:
-- Se ingresa el tamaño de la matriz: 3 (3 ecuaciones)
-- Se ingresan los valores de la matriz de coeficientes `( A )` y el vector de términos independientes `( b )`, por filas y de manera separada:
-```     
-     Fila 1: -8 1 -2
-     Fila 2: 2 -6 -1
-     Fila 3: -3 -1 7
-```     
-```     
-     vector de soluciones: -20 -38 -34
-```
-- El vector de aproximación inicial `( x^0 )` siempre será un vector de ceros
-- Se ingresa el número máximo de iteraciones: ejemplo `10`
-- Se ingresa el margen de error: ejemplo _margen de %1_ = `0.001`
-- Calculamos y obtenemos las soluciónes del sistema de ecuaciones para cada iteración
-hasta llegar a la solución final:
-```     
-Resultados 
- Iteración |  x_   |  resultado
-    1         x_0     2.5000     
-    1         x_1     6.3333     
-    1         x_2     -4.8571
-     
-     ...
-```  
-
-```
- Resultados finales:
-   * 3.9999
-   * 7.9998
-   * -2.0001
-```
