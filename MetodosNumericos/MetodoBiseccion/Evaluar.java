@@ -1,5 +1,5 @@
 package MetodoBiseccion;
-class Evaluar{
+public class Evaluar{
 
     /*Metodo que convierte y resuelve la cadena de texto de la ecuación a un resultado entero */
     /**
@@ -20,7 +20,7 @@ class Evaluar{
      *     <li>Si la cadena contiene una raíz cuadrada {@code [sqrt(x) + 4] * 3}, se resuelve la raíz cuadrada</li>
      * </lis>
      */
-    static double evaluar(String cadena, double x) {
+    public static double evaluar(String cadena, double x) {
         cadena = cadena.toLowerCase();
         double resultado = 0;
         try {

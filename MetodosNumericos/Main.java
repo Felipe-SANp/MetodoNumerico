@@ -1,5 +1,6 @@
 import ErrorAbsoluto.Menu_Error_Absoluto;
 import Gauss_Jacobi.menuGJS;
+import IntegracionNumerica.metodoTrapecio;
 import MetodoBiseccion.MenuBiseccion;
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -21,7 +22,8 @@ public class Main {
                     - 1. Ir a Código de Error Absoluto
                     - 2. Ir a Código de Metodo de Bisección
                     - 3. Ir a Código de Método de Gauss-Jacobi
-                    - 4. Terminar Código
+                    - 4. Ir a Código de Método de Trapecio
+                    - 5. Terminar Código
 
                      Ingrese una Opcion: \
                     """
@@ -40,8 +42,10 @@ public class Main {
                     case 3:
                         menuGJS.gauss_Jacobi(scn);
                         break;
-                
                     case 4:
+                        metodoTrapecio.menuTrapecio();
+                        break;
+                    case 5:
                         imprimir("\nTerminando...");
                     break;
                     
@@ -50,7 +54,7 @@ public class Main {
                     break;
                 }
                 
-            } while (op!=4);
+            } while (op!=5);
             
         } catch (InputMismatchException e) {
             imprimir("\n Error: Trate de ingresar solo números validos\n");

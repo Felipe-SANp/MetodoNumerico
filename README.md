@@ -4,7 +4,7 @@ Información:
 
 - Autores: .....
 - Fecha creación: 15/02/24
-- Última actualización: 14/04/24
+- Última actualización: 10/05/24
 
 ## DESCRIPCIÓN DEL PROYECTO
 
@@ -26,6 +26,7 @@ Carpetas
 - [ErrorAbsoluto](MetodosNumericos/ErrorAbsoluto): Carpeta con los códigos relacionados con el error absoluto.
 - [MetodoBiseccion](MetodosNumericos/MetodoBiseccion): Carpeta con los códigos relacionados con el metodo de bisección.
 - [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
+- [IntegracionNumerica](MetodosNumericos/IntegracionNumerica): Carpeta con los códigos relacionados con el metodo de integración numérica.
 
 Códigos
 
@@ -36,6 +37,7 @@ Códigos
 - `MenuBiseccion`: Código que permite probar el metodo de bisección.
 - `metodo.java`: Código que contiene el método de Jacobi.
 - `menuGJS.java`: Código para el menú del método de Jacobi.
+- `metodoTrapecio.java`: Código que contiene el método de integración numérica de la regla del Trapecio.
 - `README.md`: Archivo con la información del proyecto.
 
 ## RECOMENDACIONES PARA SU USO
