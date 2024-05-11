@@ -15,6 +15,7 @@ Los archivos principales son sobre:
 - Error Absoluto
 - Metodo de Bisección
 - Método de Gauss-Seidel
+- Integración Numérica
 
 ## ORGANIZACIÓN DE LOS CÓDIGOS
 
