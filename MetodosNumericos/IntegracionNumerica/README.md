@@ -45,7 +45,7 @@ La clase `metodoTrapecio.java` contiene los métodos `trapecio()`, `f()`, `round
 - El método `f()` simplemente evalúa la función en un punto dado, utilizando el método `evaluar()` de la clase `Evaluar.java`.
 - El método `round()` se utiliza para redondear un número decimal a un número específico de decimales.
 - El método `main()` proporciona una interfaz de línea de comandos para el método `trapecio()`:
--
+
   * Imprime una descripción del método del trapecio
   * Solicita al usuario que ingrese los límites de integración
   * El número de segmentos y la función a integrar
