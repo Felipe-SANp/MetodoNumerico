@@ -4,7 +4,7 @@ Información:
 
 - Autores: .....
 - Fecha creación: 15/02/24
-- Última actualización: 10/05/24
+- Última actualización: 22/05/24
 
 ## DESCRIPCIÓN DEL PROYECTO
 
@@ -16,6 +16,7 @@ Los archivos principales son sobre:
 - Metodo de Bisección
 - Método de Gauss-Seidel
 - Integración Numérica
+- Regresión Lineal Simple
 
 ## ORGANIZACIÓN DE LOS CÓDIGOS
 
@@ -28,6 +29,7 @@ Carpetas
 - [MetodoBiseccion](MetodosNumericos/MetodoBiseccion): Carpeta con los códigos relacionados con el metodo de bisección.
 - [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
 - [IntegracionNumerica](MetodosNumericos/IntegracionNumerica): Carpeta con los códigos relacionados con el metodo de integración numérica.
+- [RegresionLinealSimple](MetodosNumericos/RegresionLinealSimple): Carpeta con los códigos relacionados con el metodo de regresión lineal simple.
 
 Códigos
 
@@ -39,9 +41,10 @@ Códigos
 - `metodo.java`: Código que contiene el método de Jacobi.
 - `menuGJS.java`: Código para el menú del método de Jacobi.
 - `metodoTrapecio.java`: Código que contiene el método de integración numérica de la regla del Trapecio.
+- `regresionSimple.java`: Código que contiene el método de regresión lineal simple.
 - `README.md`: Archivo con la información del proyecto.
 
 ## RECOMENDACIONES PARA SU USO
 
-Para utilizar este repositorio, es necesario tener conocimientos básicos sobre los temas de Métodos Numéricos
-y de los métodos que se presentan en los códigos.
+Para utilizar los archivos `.java` de este repositorio, es necesario tener conocimientos básicos sobre los temas de Métodos Numéricos
+y de los métodos que se presentan.
