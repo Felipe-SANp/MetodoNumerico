@@ -13,7 +13,8 @@ public class regresionSimple {
             1. Ingresar datos
             2. Imprimir ecuación de la recta
             3. Predecir con la ecuacion
-            4. Salir
+            4. Borrar datos
+            5. Salir
            \s
             Escoja una opción:\s""";
 
@@ -102,8 +103,12 @@ public class regresionSimple {
                     double x_p = scn.nextDouble();
                     calcularPrediccion(coeficientes, x_p);
                     break;
-
                 case 4:
+                    x.clear();
+                    y.clear();
+                    System.out.println(" * Datos borrados");
+                    break;
+                case 5:
                     System.out.println("Saliendo...");
                     break;
 
@@ -112,6 +117,6 @@ public class regresionSimple {
                     break;
 
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
     }
 }
