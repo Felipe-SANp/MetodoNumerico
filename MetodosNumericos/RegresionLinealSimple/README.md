@@ -1,4 +1,4 @@
-# Métodos Numéricos: Metodo de Regresión Lineal Simple
+# Metodo de Regresión Lineal Simple
 ### Descripción
 El método de regresión lineal simple es un método que se utiliza para encontrar la relación entre dos variables, una variable dependiente y una variable independiente. 
 - La variable independiente se representa por X
@@ -18,31 +18,31 @@ La clase `regresionSimple` implementa el método de Regresión Lineal Simple en 
 
 ## Métodos
 
-### `regresionLineal(ArrayList<Double> x, ArrayList<Double> y)`
+#### `regresionLineal(ArrayList<Double> x, ArrayList<Double> y)`
 
 - Recibe dos listas de números reales, `x` y `y`, que representan los valores de las variables independiente y dependiente respectivamente. 
 - Utiliza la clase `SimpleRegression` de Apache Commons Math para calcular los coeficientes de la ecuación de regresión lineal. 
 - Retorna un arreglo de dos elementos, donde el primer elemento es la pendiente (`a`) y el segundo elemento es la intersección con el eje y (`b`).
 
-### `llenarArreglo(ArrayList<Double> x, ArrayList<Double> y, int n)`
+#### `llenarArreglo(ArrayList<Double> x, ArrayList<Double> y, int n)`
 
 - Recibe dos listas de números reales, `x` y `y`, y un entero `n` que representa el número de elementos a ingresar en cada lista. 
 - Solicita al usuario que ingrese los valores de `x` y `y` desde la consola.
 
-### `imprimirArreglo(ArrayList<Double> x, ArrayList<Double> y)`
+#### `imprimirArreglo(ArrayList<Double> x, ArrayList<Double> y)`
 
 - Recibe dos listas de números reales, `x` y `y`, e imprime sus valores en la consola.
 
-### `calcularPrediccion(double[] coeficientes, double x)`
+#### `calcularPrediccion(double[] coeficientes, double x)`
 
 - Recibe un arreglo de dos elementos que representan los coeficientes de la ecuación de regresión lineal y un número real `x`. 
 - Calcula el valor de `y` utilizando la ecuación de regresión lineal y lo imprime en la consola.
 
-### `menu()`
+#### `menu()`
 
 - Muestra un menú interactivo al usuario para ingresar los valores de `x` y `y`, calcular los coeficientes de la ecuación de regresión lineal, imprimir la ecuación y predecir valores de `y` para un valor de `x` dado.
 
 ## Uso
 
-Para utilizar esta clase, primero se debe instanciar un objeto de la clase `regresionSimple` y luego llamar al método `menu()`. 
+Para utilizar esta clase, primero se instancia un objeto de la clase `regresionSimple` y luego se llama al método `menu()`. 
 El usuario puede interactuar con el programa a través de la consola para ingresar los valores de `x` y `y`, calcular la ecuación de regresión lineal y predecir valores de `y`.
