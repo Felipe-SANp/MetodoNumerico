@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class menuGJS {
 
     private static final String menuGaussJacobi = """
-        Método de Gauss-Jacobi
+        Menu:
         1. Ingresar matriz
         2. Ingresar la iteración máxima
         3. Calcular

@@ -9,17 +9,15 @@ public class Menu_Error_Absoluto {
     public static void menu1() {
         Scanner sc = new Scanner(System.in);
         int opcion;
-        System.out.println("\n=== ERROR ABSOLUTO ===");
-
         try {
             do{
                 // Menu de opciones 
                 imprimir("""
                     
-                    Opciones disponibles:
-                    - 1. Calcular ingresando datos de Aproximación y Valor Real
-                    - 2. Calcular con una cantidad determinada de casos
-                    - 3. salir
+                    Menu:
+                    1. Calcular ingresando datos de Aproximación y Valor Real
+                    2. Calcular con una cantidad determinada de casos
+                    3. salir
                     Ingrese una opcion: \
                     """
                 );

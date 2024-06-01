@@ -22,13 +22,12 @@ public class MenuBiseccion {
         );
             
         try{
-            imprimir("\n=== METODO BISECCIÓN ===\n");
             do {
                 imprimir("""
                    
-                   opciones disponibles:
-                   - 1. Calcular Nueva Función
-                   - 2. Salir
+                   Menu:
+                   1. Calcular Nueva Función
+                   2. Salir
                    Ingrese una Opcion: \
                    """
                 );

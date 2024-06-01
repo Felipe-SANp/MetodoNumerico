@@ -4,7 +4,7 @@ Información:
 
 - Autores: .....
 - Fecha creación: 15/02/24
-- Última actualización: 22/05/24
+- Última actualización: 01/06/24
 
 ## DESCRIPCIÓN DEL PROYECTO
 
@@ -30,6 +30,7 @@ Carpetas
 - [Gauss_Jacobi](MetodosNumericos/Gauss_Jacobi): Carpeta con los códigos relacionados con el metodo de Gauss-Seidel y Jacobi.
 - [IntegracionNumerica](MetodosNumericos/IntegracionNumerica): Carpeta con los códigos relacionados con el metodo de integración numérica.
 - [RegresionLinealSimple](MetodosNumericos/RegresionLinealSimple): Carpeta con los códigos relacionados con el metodo de regresión lineal simple.
+- [MetodoBashForth](MetodosNumericos/MetodoBashForth): Carpeta con los códigos relacionados con el metodo de Bash Forth.
 
 Códigos
 
@@ -42,6 +43,8 @@ Códigos
 - `menuGJS.java`: Código para el menú del método de Jacobi.
 - `metodoTrapecio.java`: Código que contiene el método de integración numérica de la regla del Trapecio.
 - `regresionSimple.java`: Código que contiene el método de regresión lineal simple.
+- `adamsBashForth.java`: Código que contiene el método de Bash Forth.
+- `crearTabla.java`: Código que crea una tabla con los valores: columna, datos y número de carácteres máximos por columna.
 - `README.md`: Archivo con la información del proyecto.
 
 ## RECOMENDACIONES PARA SU USO
